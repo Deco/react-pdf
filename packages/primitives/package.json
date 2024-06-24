@@ -15,13 +15,16 @@
       "default": "./src/index.js"
     }
   },
+  "dependencies": {
+    "shx": "^0.3.4"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/diegomura/react-pdf.git",
     "directory": "packages/primitives"
   },
   "scripts": {
-    "build": "babel src --out-dir lib && mv lib/index.js lib/index.cjs",
+    "build": "babel src --out-dir lib && shx mv lib/index.js lib/index.cjs",
     "test": "vitest"
   },
   "files": [
